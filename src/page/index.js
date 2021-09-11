@@ -1,1 +1,4 @@
-export { Main } from './test1/Main';
+export { BiggerBox } from './biggerBox/BiggerBox';
+export { HomePage } from './HomePage';
+export { Header } from './Header';
+export { RotatingBox } from './rotatingBox/RotatingBox';
