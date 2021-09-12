@@ -13,7 +13,7 @@ export const BiggerBox = () => {
         isOpen === 'true' ? setIsOpen('false') : setIsOpen('true')
       }
       data={isOpen}>
-      {isOpen === 'false' ? '> _ <' : 'O ~ O'}
+      {isOpen === 'false' ? '> _ <' : 'O M O'}
     </Wrapper>
   );
 };
