@@ -9185,10 +9185,10 @@
     "camelcase" "^3.0.0"
     "object.assign" "^4.1.0"
 
-"yargs-parser@^7.0.0":
+"yargs-parser@^13.1.2":
   "integrity" "sha1-jQrELxbqVd69MyyvTEA4s+P139k="
   "resolved" "https://registry.npmjs.org/yargs-parser/-/yargs-parser-7.0.0.tgz"
-  "version" "7.0.0"
+  "version" "13.1.2"
   dependencies:
     "camelcase" "^4.1.0"
 
