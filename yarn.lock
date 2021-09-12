@@ -1601,10 +1601,10 @@
     "balanced-match" "^1.0.0"
     "concat-map" "0.0.1"
 
-"braces@^1.8.2":
+"braces@^2.3.1":
   "integrity" "sha1-uneWLhLf+WnWt2cR6RS3N4V79qc="
   "resolved" "https://registry.npmjs.org/braces/-/braces-1.8.5.tgz"
-  "version" "1.8.5"
+  "version" "2.3.1"
   dependencies:
     "expand-range" "^1.8.1"
     "preserve" "^0.2.0"
