@@ -8938,10 +8938,10 @@
     "range-parser" "^1.0.3"
     "time-stamp" "^2.0.0"
 
-"webpack-dev-server@2.11.3":
+"webpack-dev-server@3.1.11":
   "integrity" "sha512-Qz22YEFhWx+M2vvJ+rQppRv39JA0h5NNbOOdODApdX6iZ52Diz7vTPXjF7kJlfn+Uc24Qr48I3SZ9yncQwRycg=="
   "resolved" "https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-2.11.3.tgz"
-  "version" "2.11.3"
+  "version" "3.1.11"
   dependencies:
     "ansi-html" "0.0.7"
     "array-includes" "^3.0.3"
