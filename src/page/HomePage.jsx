@@ -8,6 +8,7 @@ export const HomePage = () => {
     <ListWrapper animate={{ scale: 2 }}>
       <LinkStyle to="/biggerBox">Bigger Box</LinkStyle>
       <LinkStyle to="/rotatingBox">Rotating Box</LinkStyle>
+      <LinkStyle to="/scrollView">Scroll View</LinkStyle>
     </ListWrapper>
   );
 };
@@ -26,6 +27,5 @@ const LinkStyle = styled(Link)`
   border-radius: 30px;
   padding: 0;
   margin-bottom: 10px;
-
   cursor: pointer;
 `;

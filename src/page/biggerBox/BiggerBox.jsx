@@ -13,7 +13,7 @@ export const BiggerBox = () => {
         isOpen === 'true' ? setIsOpen('false') : setIsOpen('true')
       }
       data={isOpen}>
-      {isOpen === 'false' ? '> _ <' : 'O M O'}
+      {isOpen === 'false' ? '> _ <' : 'O ~ O'}
     </Wrapper>
   );
 };
@@ -27,7 +27,8 @@ const Wrapper = styled(motion.div)`
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  ${({ data }) => data === 'true' && `width: 200px; height: 200px; `}
   font-size: 20px;
+  ${({ data }) =>
+    data === 'true' && `width: 200px; height: 200px; font-size: 30px; `}
   cursor: pointer;
 `;

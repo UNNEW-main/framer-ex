@@ -1,5 +1,11 @@
 import React from 'react';
-import { BiggerBox, HomePage, Header, RotatingBox } from './page/index';
+import {
+  BiggerBox,
+  HomePage,
+  Header,
+  RotatingBox,
+  ScrollView,
+} from './page/index';
 import styled from 'styled-components';
 import { BrowserRouter, Route } from 'react-router-dom';
 const App = () => {
@@ -10,6 +16,7 @@ const App = () => {
         <Route path="/" exact component={HomePage} />
         <Route path="/biggerBox" component={BiggerBox} />
         <Route path="/rotatingBox" component={RotatingBox} />
+        <Route path="/scrollView" component={ScrollView} />
       </Section>
     </BrowserRouter>
   );
