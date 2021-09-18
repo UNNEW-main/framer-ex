@@ -8,7 +8,8 @@ export const HomePage = () => {
     <ListWrapper animate={{ scale: 2 }}>
       <LinkStyle to="/biggerBox">Bigger Box</LinkStyle>
       <LinkStyle to="/rotatingBox">Rotating Box</LinkStyle>
-      <LinkStyle to="/scrollView">Scroll View</LinkStyle>
+      <LinkStyle to="/UseMotionValue">useMotionValue</LinkStyle>
+      <LinkStyle to="/useTransform">useTransform</LinkStyle>
     </ListWrapper>
   );
 };

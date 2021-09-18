@@ -4,10 +4,12 @@ import {
   HomePage,
   Header,
   RotatingBox,
-  ScrollView,
+  UseMotionValue,
+  UseTransform,
 } from './page/index';
 import styled from 'styled-components';
 import { BrowserRouter, Route } from 'react-router-dom';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,7 +18,8 @@ const App = () => {
         <Route path="/" exact component={HomePage} />
         <Route path="/biggerBox" component={BiggerBox} />
         <Route path="/rotatingBox" component={RotatingBox} />
-        <Route path="/scrollView" component={ScrollView} />
+        <Route path="/UseMotionValue" component={UseMotionValue} />
+        <Route path="/useTransform" component={UseTransform} />
       </Section>
     </BrowserRouter>
   );
