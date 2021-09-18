@@ -3,9 +3,28 @@ import { motion, useMotionValue } from 'framer-motion';
 import styled from 'styled-components';
 
 export const ScrollView = () => {
-  const scale = useMotionValue(1);
-  console.log(scale);
-  return <Wrapper style={{ scale }}></Wrapper>;
+  const motionValue = useMotionValue(1);
+  return (
+    <div>
+      <Wrapper style={{ translateX: motionValue }}>
+        <motion.div
+          style={{ translateX: motionValue }}
+          animate={{
+            translateX: 20,
+            transition: {
+              times: [0, 0.5, 1],
+              yoyo: Infinity,
+            },
+          }}>
+          👊
+        </motion.div>
+        <motion.div style={{ translateX: motionValue }}>😝</motion.div>
+        <motion.div style={{ scaleX: -1, translateX: motionValue }}>
+          👊
+        </motion.div>
+      </Wrapper>
+    </div>
+  );
 };
 
 const Wrapper = styled(motion.div)`
