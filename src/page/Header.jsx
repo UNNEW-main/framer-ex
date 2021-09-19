@@ -21,7 +21,7 @@ const button = {
 };
 
 const ButtonWrapper = styled(motion.div)`
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 30px;
   display: flex;

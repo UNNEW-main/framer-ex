@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-
+import { Layout } from '../../components/Layout';
 export const BiggerBox = () => {
   const [isOpen, setIsOpen] = useState('false');
   return (
-    <Wrapper
-      layout
-      animate={{ scale: 2 }}
-      whileTap={isOpen === 'false' ? { scale: 1.8 } : { scale: 2.2 }}
-      onClick={() =>
-        isOpen === 'true' ? setIsOpen('false') : setIsOpen('true')
-      }
-      data={isOpen}>
-      {isOpen === 'false' ? '> _ <' : 'O ~ O'}
-    </Wrapper>
+    <Layout height={'100vh'}>
+      <Wrapper
+        layout
+        animate={{ scale: 2 }}
+        whileTap={isOpen === 'false' ? { scale: 1.8 } : { scale: 2.2 }}
+        onClick={() =>
+          isOpen === 'true' ? setIsOpen('false') : setIsOpen('true')
+        }
+        data={isOpen}>
+        {isOpen === 'false' ? '> _ <' : 'O ~ O'}
+      </Wrapper>
+    </Layout>
   );
 };
 

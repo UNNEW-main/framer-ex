@@ -2,18 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { Layout } from '../components/Layout';
 
 export const HomePage = () => {
   return (
-    <ListWrapper animate={{ scale: 2 }}>
-      <LinkStyle to="/biggerBox">Bigger Box</LinkStyle>
-      <LinkStyle to="/rotatingBox">Rotating Box</LinkStyle>
-      <LinkStyle to="/UseMotionValue">useMotionValue</LinkStyle>
-      <LinkStyle to="/useTransform">useTransform</LinkStyle>
-    </ListWrapper>
+    <Layout height={'100vh'}>
+      <ListWrapper animate={{ scale: 2 }}>
+        <LinkStyle to="/biggerBox">Bigger Box</LinkStyle>
+        <LinkStyle to="/rotatingBox">Rotating Box</LinkStyle>
+        <LinkStyle to="/UseMotionValue">useMotionValue</LinkStyle>
+        <LinkStyle to="/useTransform">useTransform</LinkStyle>
+        <LinkStyle to="/useViewportScroll">useViewportScroll</LinkStyle>
+      </ListWrapper>
+    </Layout>
   );
 };
-const ListWrapper = styled(motion.div)``;
+
+const ListWrapper = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const LinkStyle = styled(Link)`
   display: flex;
@@ -23,7 +33,7 @@ const LinkStyle = styled(Link)`
   color: black;
   font-size: 10px;
   background-color: white;
-  width: 100px;
+  width: 150px;
   height: 20px;
   border-radius: 30px;
   padding: 0;

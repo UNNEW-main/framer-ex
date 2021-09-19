@@ -1,27 +1,30 @@
 import React from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 import styled from 'styled-components';
+import { Layout } from '../../components/Layout';
 
 export const UseMotionValue = () => {
   const motionValue = useMotionValue(1);
   return (
-    <Wrapper style={{ translateX: motionValue }}>
-      <motion.div
-        style={{ translateX: motionValue }}
-        animate={{
-          translateX: 20,
-          transition: {
-            times: [0, 0.5, 1],
-            yoyo: Infinity,
-          },
-        }}>
-        👊
-      </motion.div>
-      <motion.div style={{ translateX: motionValue }}>😝</motion.div>
-      <motion.div style={{ scaleX: -1, translateX: motionValue }}>
-        👊
-      </motion.div>
-    </Wrapper>
+    <Layout height={'100vh'}>
+      <Wrapper style={{ translateX: motionValue }}>
+        <motion.div
+          style={{ translateX: motionValue }}
+          animate={{
+            translateX: 20,
+            transition: {
+              times: [0, 0.5, 1],
+              yoyo: Infinity,
+            },
+          }}>
+          👊
+        </motion.div>
+        <motion.div style={{ translateX: motionValue }}>😝</motion.div>
+        <motion.div style={{ scaleX: -1, translateX: motionValue }}>
+          👊
+        </motion.div>
+      </Wrapper>
+    </Layout>
   );
 };
 

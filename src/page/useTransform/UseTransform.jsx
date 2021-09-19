@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import styled from 'styled-components';
+import { Layout } from '../../components/Layout';
 
 export const UseTransform = () => {
   const x = useMotionValue(0);
@@ -9,11 +10,13 @@ export const UseTransform = () => {
   const opacity = useTransform(x, xRange, opacityRange);
 
   return (
-    <Wrapper
-      animate={{ x: 300 }}
-      style={{ opacity, x }}
-      transition={{ repeat: Infinity }}
-    />
+    <Layout height={'100vh'}>
+      <Wrapper
+        animate={{ x: 300 }}
+        style={{ opacity, x }}
+        transition={{ repeat: Infinity }}
+      />
+    </Layout>
   );
 };
 
