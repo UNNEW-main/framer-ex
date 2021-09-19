@@ -14,7 +14,7 @@ export const UseTransform = () => {
       <Wrapper
         animate={{ x: 300 }}
         style={{ opacity, x }}
-        transition={{ repeat: Infinity }}
+        transition={{ repeat: Infinity, duration: 2 }}
       />
     </Layout>
   );

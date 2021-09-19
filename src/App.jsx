@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   BiggerBox,
   HomePage,
@@ -32,9 +32,6 @@ export default App;
 const Section = styled.div`
   display: flex;
   justify-content: center;
-  /* 
-  width: 100vw;
-  height: 200vh; */
   background: linear-gradient(250deg, #7b2ff7, #f107a3);
   background-repeat: no-repeat;
 `;

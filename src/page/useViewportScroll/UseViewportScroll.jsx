@@ -4,22 +4,36 @@ import styled from 'styled-components';
 import { Layout } from '../../components/Layout';
 
 export const UseViewportScroll = () => {
-  const { scrollY, scrollYProgress } = useViewportScroll();
-  // useTransform(motionValue, from, to);
-  console.log(scrollYProgress);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 2, 1]);
+  const x = useTransform(scrollYProgress, [0, 0.5, 1], [-200, 0, 200]);
   return (
     <Layout height={'200vh'}>
       <Wrapper
         style={{
           scale,
-        }}></Wrapper>
+        }}
+      />
+      <Wrapper2
+        style={{
+          x,
+          y: -400,
+        }}
+      />
     </Layout>
   );
 };
 
 const Wrapper = styled(motion.div)`
+  position: absolute;
+
   width: 200px;
   height: 200px;
   background-color: white;
+`;
+const Wrapper2 = styled(motion.div)`
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: orange;
 `;
