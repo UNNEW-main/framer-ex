@@ -5,10 +5,10 @@ import { Layout } from '../../components/Layout';
 
 export const UseTransform = () => {
   const x = useMotionValue(0);
+
   const xRange = [0, 100, 250, 300];
   const opacityRange = [0, 1, 1, 0];
   const opacity = useTransform(x, xRange, opacityRange);
-
   return (
     <Layout height={'100vh'}>
       <Wrapper

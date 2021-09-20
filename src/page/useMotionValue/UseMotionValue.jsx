@@ -17,11 +17,11 @@ export const UseMotionValue = () => {
               yoyo: Infinity,
             },
           }}>
-          👊
+          d
         </motion.div>
-        <motion.div style={{ translateX: motionValue }}>😝</motion.div>
+        <motion.div style={{ translateX: motionValue }}>--</motion.div>
         <motion.div style={{ scaleX: -1, translateX: motionValue }}>
-          👊
+          d
         </motion.div>
       </Wrapper>
     </Layout>
